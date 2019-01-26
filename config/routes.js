@@ -48,7 +48,6 @@ function register(req, res) {
 }
 
 function login(req, res) {
-  console.log(secret)
   const bodyUser = req.body;
   if (!bodyUser.password || !bodyUser.username) {
     return res
